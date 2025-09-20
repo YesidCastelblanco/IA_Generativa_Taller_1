@@ -2,11 +2,15 @@ import argparse
 import os
 import tomllib
 from pathlib import Path
-
 from openai import OpenAI
 
-# 1. Autenticación con la API de OpenAI
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# 1. Configuración del cliente para usar Ollama localmente
+# La biblioteca de OpenAI es compatible con Ollama, solo necesitamos
+# cambiar la URL base y la clave de API.
+client = OpenAI(
+    base_url='http://localhost:11434/v1',
+    api_key='ollama',  # La clave de API es un placeholder para Ollama
+)
 
 # 2. Carga del archivo de configuración
 SETTINGS_PATH = Path("settings.toml")
@@ -75,7 +79,6 @@ Consulta del usuario:
         temperature=SETTINGS["general"]["temperature"],
     )
     return response.choices[0].message.content
-
 
 def main(args: argparse.Namespace) -> None:
     """Función principal para ejecutar el script."""
