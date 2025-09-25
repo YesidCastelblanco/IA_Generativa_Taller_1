@@ -1,8 +1,0 @@
-[general]
-chat_models = ["gpt-3.5-turbo", "gpt-4", "mistral"]
-model = "mistral"
-temperature = 0.5
-
-[prompts]
-role_prompt = "Eres un agente de servicio al cliente de EcoMarket. Tu objetivo es proporcionar información precisa y amable sobre el estado de los pedidos y la elegibilidad de las devoluciones."
-
