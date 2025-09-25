@@ -1,3 +1,8 @@
+# Configuración para el asistente de EcoMarket
+# Este archivo define el modelo, temperaturas, prompts y configuraciones de logging para el asistente basado en Mistral (Ollama).
+# Asegúrate de tener Ollama instalado y el modelo Mistral descargado (`ollama pull mistral`).
+# Instrucciones: Ajusta los parámetros según sea necesario para pruebas o despliegue.
+
 [general]
 # Lista de modelos posibles (en Ollama puedes tener varios instalados)
 chat_models = ["mistral", "mixtral", "llama2"]
@@ -5,8 +10,11 @@ chat_models = ["mistral", "mixtral", "llama2"]
 # Modelo por defecto a usar
 model = "mistral"
 
-# Temperatura: 0 = máximo enfoque en precisión factual (ideal para pedidos/devoluciones)
-temperature = 0
+# Temperaturas específicas por modo para balancear precisión y creatividad
+[general.temperature]
+tracking = 0.0    # Máxima precisión para seguimiento de pedidos
+return = 0.3      # Ligeramente más flexible para respuestas empáticas en devoluciones
+complex = 0.5     # Mayor creatividad para resúmenes de casos complejos
 
 [prompts]
 # Prompt del rol: define el comportamiento general del asistente
@@ -17,7 +25,7 @@ Siempre que des una respuesta, explica la información de manera empática
 y con un enfoque en sostenibilidad y confianza.
 """
 
-# Prompt de instrucciones generales (útil para filtrado o limpieza si quieres)
+# Prompt de instrucciones generales (útil para filtrado o limpieza)
 instruction_prompt = """
 Cuando uses la base de datos de pedidos o devoluciones:
 1. Responde siempre en español.
@@ -26,7 +34,7 @@ Cuando uses la base de datos de pedidos o devoluciones:
 4. Si una devolución no es posible, responde con amabilidad y explica la razón.
 """
 
-# Ejemplos positivos y negativos (para few-shot prompting opcional)
+# Ejemplos positivos y negativos (para few-shot prompting)
 positive_example = "Quiero devolver un termo de acero inoxidable comprado hace 10 días."
 positive_reasoning = "El producto es elegible (no es perecedero ni personalizado, está dentro del plazo de 30 días)."
 positive_output = "Puedes devolver tu termo en 3 pasos: (1) Empácalo en su caja original, (2) Descarga la guía de devolución en tu correo, (3) Llévalo a la oficina de mensajería más cercana."
@@ -34,3 +42,33 @@ positive_output = "Puedes devolver tu termo en 3 pasos: (1) Empácalo en su caja
 negative_example = "Quiero devolver una caja de frutas frescas que compré ayer."
 negative_reasoning = "El producto no es elegible porque es perecedero."
 negative_output = "Lo siento mucho, los productos perecederos como frutas no pueden devolverse por razones de seguridad alimentaria."
+
+# Prompt para RAG: instrucciones para usar datos recuperados
+[prompts.rag]
+retrieval_prompt = """
+Usa únicamente la información recuperada de la base de datos para responder. 
+Si no hay datos relevantes, indica que no se encontró información y ofrece contactar a un agente humano.
+Ejemplo: "Lo siento, no encontré información sobre ese pedido. ¿Deseas que un agente te asista?"
+"""
+
+# Prompt para clasificar consultas (tracking, return, complex)
+[prompts.classifier]
+classify_prompt = """
+Clasifica la siguiente consulta en una de estas categorías: 'tracking' (seguimiento de pedidos), 'return' (devoluciones), o 'complex' (requiere agente humano). 
+Responde únicamente con la categoría.
+
+Consulta: {query}
+"""
+
+# Prompt para generar resúmenes de consultas complejas
+[prompts.summary]
+summary_prompt = """
+Resume la siguiente consulta del usuario en un párrafo breve y claro para que un agente humano pueda entender el contexto rápidamente.
+
+Consulta: {query}
+"""
+
+[logging]
+# Configuración para registrar interacciones y métricas
+log_file = "interactions.log"
+log_level = "INFO"
