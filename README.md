@@ -1,6 +1,6 @@
 # IA_Generativa_Taller_1
 
-# 📌 Introducción  
+# Introducción  
 
 EcoMarket es una empresa de e-commerce dedicada a la venta de productos sostenibles, que actualmente enfrenta un **cuello de botella en su servicio de atención al cliente**.  
 
@@ -17,12 +17,12 @@ El objetivo del taller es **diseñar una solución de IA generativa** que permit
 A continuación, se presentan las fases de desarrollo de la solución propuesta.  
 
 ---
-# 📌 Fase 1  
+# Fase 1  
 **Selección y Justificación del Modelo de IA para EcoMarket**
 
 ---
 
-## ✅ Modelo Seleccionado  
+## Modelo Seleccionado  
 Se propone un **Large Language Model (LLM) de código abierto**, específicamente **Mistral** (Mistral-7B o Mixtral-8x7B), afinado con datos propios de EcoMarket mediante **fine-tuning ligero** (LoRA/PEFT) e integrado con la base de datos en tiempo real a través de **Retrieval-Augmented Generation (RAG)**.  
 
 La arquitectura incluye:  
@@ -35,7 +35,7 @@ Esta arquitectura reduce el tiempo de respuesta de **24h a minutos**, mejora la 
 
 ---
 
-## 🔎 Justificación de la Elección  
+## Justificación de la Elección  
 
 ### 1. Tipo de Modelo Adecuado  
 Un **LLM fine-tuned open-source** como Mistral es más adecuado que:  
@@ -78,19 +78,19 @@ Mistral combina precisión factual (gracias a RAG) con fluidez y empatía (graci
 
 ---
 
-## ✅ Conclusión  
+## Conclusión  
 La mejor solución para EcoMarket es un **modelo híbrido basado en Mistral, fine-tuned con datos propios e integrado vía RAG**, con un sistema de escalamiento humano para casos complejos.  
 
 Esta arquitectura equilibra **calidad de respuesta, costo, escalabilidad, integración y control total sobre los datos**, alineándose plenamente con los objetivos del caso de estudio.  
 
 ---
 
-# 📌 Fase 2  
+# Fase 2  
 **Evaluación de Fortalezas, Limitaciones y Riesgos Éticos del modelo de IA propuesto para EcoMarket**
 
 ---
 
-## 💪 Fortalezas  
+## Fortalezas  
 
 1. **Reducción del tiempo de respuesta**  
    - El modelo puede manejar de forma autónoma el **80% de las consultas repetitivas** (estado de pedidos, devoluciones, características de productos).  
@@ -109,7 +109,7 @@ Esta arquitectura equilibra **calidad de respuesta, costo, escalabilidad, integr
 
 ---
 
-## ⚠️ Limitaciones  
+## Limitaciones  
 
 1. **Incapacidad para manejar casos complejos**  
    - No puede replicar la empatía genuina ni el pensamiento crítico necesario para resolver quejas graves, compensaciones especiales o problemas técnicos no estandarizados.  
@@ -128,7 +128,7 @@ Esta arquitectura equilibra **calidad de respuesta, costo, escalabilidad, integr
 
 ---
 
-## ⚖️ Riesgos Éticos  
+## Riesgos Éticos  
 
 1. **Alucinaciones**  
    - *Riesgo*: El modelo podría inventar información (ej. números de seguimiento falsos o políticas inexistentes).  
@@ -152,7 +152,7 @@ Esta arquitectura equilibra **calidad de respuesta, costo, escalabilidad, integr
 
 ---
 
-## ✅ Conclusión  
+## Conclusión  
 
 El modelo propuesto ofrece **fortalezas clave en eficiencia, escalabilidad y calidad de servicio**, pero también presenta **limitaciones y riesgos éticos** que deben gestionarse con cuidado.  
 
