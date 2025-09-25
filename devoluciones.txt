@@ -1,0 +1,10 @@
+Reglas de devolución:
+- No elegibles: productos perecederos, higiene personal, personalizados.
+- Elegibles: cualquier otro producto en un plazo de 30 días, sin usar y en su empaque original.
+
+Ejemplos de productos:
+- Producto: Termo de acero inoxidable, Fecha de compra: 2025-09-10, Elegible: Sí
+- Producto: Caja de frutas frescas, Fecha de compra: 2025-09-20, Elegible: No (perecedero)
+- Producto: Shampoo natural 500ml, Fecha de compra: 2025-09-12, Elegible: No (higiene personal)
+- Producto: Camiseta EcoMarket edición limitada, Fecha de compra: 2025-09-05, Elegible: No (personalizado)
+- Producto: Libreta ecológica, Fecha de compra: 2025-09-15, Elegible: Sí
