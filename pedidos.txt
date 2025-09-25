@@ -1,10 +1,10 @@
 - Pedido 1001: Número de seguimiento ABC12345, Estado: En camino, Fecha estimada de entrega: 2025-09-22, Enlace de seguimiento: url.com/tracking/ABC12345
-- Pedido 1002: Número de seguimiento DEF67890, Estado: Entregado, Fecha de entrega: 2025-09-18
+- Pedido 1002: Número de seguimiento DEF67890, Estado: Entregado, Fecha de entrega: 2025-09-18, Enlace de seguimiento: url.com/tracking/DEF67890
 - Pedido 1003: Número de seguimiento GHI12345, Estado: Retrasado, Causa: Problemas de aduana, Fecha estimada de entrega: 2025-09-25, Enlace de seguimiento: url.com/tracking/GHI12345
 - Pedido 1004: Número de seguimiento JKL67890, Estado: En tránsito, Fecha estimada de entrega: 2025-09-23, Enlace de seguimiento: url.com/tracking/JKL67890
-- Pedido 1005: Número de seguimiento MNO11223, Estado: Cancelado, Razón: Solicitud del cliente
-- Pedido 1006: Número de seguimiento PQR44556, Estado: Entregado, Fecha de entrega: 2025-09-15
+- Pedido 1005: Número de seguimiento MNO11223, Estado: Cancelado, Razón: Solicitud del cliente, Enlace de seguimiento: url.com/tracking/MNO11223
+- Pedido 1006: Número de seguimiento PQR44556, Estado: Entregado, Fecha de entrega: 2025-09-15, Enlace de seguimiento: url.com/tracking/PQR44556
 - Pedido 1007: Número de seguimiento STU77889, Estado: En camino, Fecha estimada de entrega: 2025-09-24, Enlace de seguimiento: url.com/tracking/STU77889
-- Pedido 1008: Número de seguimiento VWX00112, Estado: Procesando, Fecha estimada de entrega: 2025-09-26
-- Pedido 1009: Número de seguimiento YZA33445, Estado: Entregado, Fecha de entrega: 2025-09-19
+- Pedido 1008: Número de seguimiento VWX00112, Estado: Procesando, Fecha estimada de entrega: 2025-09-26, Enlace de seguimiento: url.com/tracking/VWX00112
+- Pedido 1009: Número de seguimiento YZA33445, Estado: Entregado, Fecha de entrega: 2025-09-19, Enlace de seguimiento: url.com/tracking/YZA33445
 - Pedido 1010: Número de seguimiento BCD66778, Estado: En tránsito, Fecha estimada de entrega: 2025-09-27, Enlace de seguimiento: url.com/tracking/BCD66778
