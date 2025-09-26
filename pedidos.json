@@ -1,0 +1,80 @@
+[
+  {
+    "order_id": 1001,
+    "tracking_number": "ABC12345",
+    "status": "Entregado",
+    "delivery_date": "2025-09-22",
+    "tracking_url": "https://ecomarket.track/ABC12345"
+  },
+  {
+    "order_id": 1002,
+    "tracking_number": "DEF67890",
+    "status": "Entregado",
+    "delivery_date": "2025-09-20",
+    "tracking_url": "https://ecomarket.track/DEF67890"
+  },
+  {
+    "order_id": 1003,
+    "tracking_number": "GHI12345",
+    "status": "Retrasado",
+    "reason": "Retraso en transporte sostenible por condiciones climáticas",
+    "delivery_date": "2025-09-26",
+    "tracking_url": "https://ecomarket.track/GHI12345"
+  },
+  {
+    "order_id": 1004,
+    "tracking_number": "JKL67890",
+    "status": "En tránsito",
+    "delivery_date": "2025-09-25",
+    "tracking_url": "https://ecomarket.track/JKL67890"
+  },
+  {
+    "order_id": 1005,
+    "tracking_number": "MNO11223",
+    "status": "Cancelado",
+    "reason": "Solicitud del cliente",
+    "delivery_date": "2025-09-23",
+    "tracking_url": "https://ecomarket.track/MNO11223"
+  },
+  {
+    "order_id": 1006,
+    "tracking_number": "PQR44556",
+    "status": "Entregado",
+    "delivery_date": "2025-09-15",
+    "tracking_url": "https://ecomarket.track/PQR44556"
+  },
+  {
+    "order_id": 1007,
+    "tracking_number": "STU77889",
+    "status": "En camino",
+    "delivery_date": "2025-09-26",
+    "tracking_url": "https://ecomarket.track/STU77889"
+  },
+  {
+    "order_id": 1008,
+    "tracking_number": "VWX00112",
+    "status": "Procesando",
+    "delivery_date": "2025-09-28",
+    "tracking_url": "https://ecomarket.track/VWX00112"
+  },
+  {
+    "order_id": 1009,
+    "tracking_number": "YZA33445",
+    "status": "Entregado",
+    "delivery_date": "2025-09-19",
+    "tracking_url": "https://ecomarket.track/YZA33445"
+  },
+  {
+    "order_id": 1010,
+    "tracking_number": "BCD66778",
+    "status": "En tránsito",
+    "delivery_date": "2025-09-27",
+    "tracking_url": "https://ecomarket.track/BCD66778"
+  },
+  {
+    "order_id": 1011,
+    "tracking_number": "XYZ99999",
+    "status": "No encontrado",
+    "note": "Ejemplo para prueba de error"
+  }
+]
