@@ -6,6 +6,12 @@ import time
 from pathlib import Path
 from openai import OpenAI
 
+# Compatibilidad para cargar archivos TOML
+try:
+    import tomllib  # Disponible en Python 3.11+
+except ModuleNotFoundError:
+    import tomli as tomllib  # Para Python <3.11 (requiere instalar tomli)
+
 # ==============================
 # 1. Configuración del cliente para usar Ollama localmente
 # ==============================
@@ -247,3 +253,4 @@ def main(args: argparse.Namespace) -> None:
 
 if __name__ == "__main__":
     main(parse_args())
+
