@@ -1,0 +1,32 @@
+[
+  {
+    "product": "Termo de acero inoxidable",
+    "purchase_date": "2025-09-10",
+    "eligible": true,
+    "reason": "Producto no perecedero, dentro del plazo de 30 días"
+  },
+  {
+    "product": "Caja de frutas frescas",
+    "purchase_date": "2025-09-20",
+    "eligible": false,
+    "reason": "Producto perecedero"
+  },
+  {
+    "product": "Shampoo natural 500ml",
+    "purchase_date": "2025-09-12",
+    "eligible": false,
+    "reason": "Producto de higiene personal"
+  },
+  {
+    "product": "Camiseta EcoMarket edición limitada",
+    "purchase_date": "2025-09-05",
+    "eligible": false,
+    "reason": "Producto personalizado"
+  },
+  {
+    "product": "Libreta ecológica",
+    "purchase_date": "2025-09-15",
+    "eligible": true,
+    "reason": "Producto no perecedero, dentro del plazo de 30 días"
+  }
+]
